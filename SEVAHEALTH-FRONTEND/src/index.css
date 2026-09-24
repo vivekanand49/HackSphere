@@ -1,0 +1,1296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f9f9;
+  color: #1f2937;
+}
+
+nav {
+  width: 100%;
+  background: #087f8c;
+  color: white;
+  padding: 18px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h2 {
+  font-size: 24px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav button {
+  background: white;
+  color: #087f8c;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background: #e6f7f8;
+}
+/* Hero Section */
+.hero {
+  min-height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 80px;
+  background: linear-gradient(135deg, #e8f8f8, #ffffff);
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  color: #087f8c;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #4b5563;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.primary-btn,
+.emergency-btn {
+  border: none;
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background: #087f8c;
+  color: white;
+}
+
+.primary-btn:hover {
+  background: #066872;
+}
+
+.emergency-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.emergency-btn:hover {
+  background: #b52a37;
+}
+
+/* Hero Image */
+.hero-image {
+  width: 300px;
+  height: 300px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.doctor-icon {
+  font-size: 90px;
+}
+
+.hero-image h2 {
+  color: #087f8c;
+  margin: 10px 0 5px;
+}
+
+.hero-image p {
+  color: #6b7280;
+}
+
+/* Services */
+.services {
+  padding: 60px 50px;
+  text-align: center;
+  background: white;
+}
+
+.services h2 {
+  font-size: 34px;
+  color: #087f8c;
+  margin-bottom: 10px;
+}
+
+.services-subtitle {
+  color: #6b7280;
+  margin-bottom: 35px;
+}
+
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.service-card {
+  padding: 30px 20px;
+  background: #f4f9f9;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+.service-icon {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  color: #087f8c;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+/* Mobile Responsive */
+@media (max-width: 800px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 25px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-image {
+    margin-top: 40px;
+  }
+
+  .service-container {
+    grid-template-columns: 1fr;
+  }
+}
+/* Login Page */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e8f8f8, #ffffff);
+}
+
+.login-card {
+  width: 400px;
+  padding: 40px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+.login-icon {
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+.login-card h1 {
+  color: #087f8c;
+  margin-bottom: 8px;
+}
+
+.login-card > p {
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+
+.login-card form {
+  text-align: left;
+}
+
+.login-card label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: bold;
+  color: #374151;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 18px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.login-card input:focus {
+  outline: none;
+  border-color: #087f8c;
+}
+
+.login-card button {
+  width: 100%;
+  padding: 13px;
+  background: #087f8c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-card button:hover {
+  background: #066872;
+}
+/* =========================
+   SEVAHEALTH DASHBOARD
+   ========================= */
+
+.dashboard-page {
+  min-height: 100vh;
+  background: #f4f9f9;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+  background: #087f8c;
+  color: white;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-header h1 {
+  margin-bottom: 5px;
+}
+
+.dashboard-header p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+.patient-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.patient-info span {
+  font-size: 35px;
+}
+
+.patient-info small {
+  display: block;
+  margin-top: 4px;
+  opacity: 0.8;
+}
+
+/* Welcome Section */
+.dashboard-welcome {
+  padding: 45px 50px 25px;
+}
+
+.dashboard-welcome h2 {
+  color: #087f8c;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.dashboard-welcome p {
+  color: #6b7280;
+  font-size: 17px;
+}
+
+/* Services */
+.dashboard-services {
+  padding: 20px 50px 60px;
+}
+
+.dashboard-services > h2 {
+  color: #374151;
+  margin-bottom: 25px;
+}
+
+.dashboard-grid {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Cards */
+.dashboard-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.dashboard-icon {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.dashboard-card h3 {
+  color: #087f8c;
+  margin-bottom: 10px;
+}
+
+.dashboard-card p {
+  color: #6b7280;
+  line-height: 1.5;
+  min-height: 48px;
+}
+
+.dashboard-card button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 11px;
+  background: #087f8c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dashboard-card button:hover {
+  background: #066872;
+}
+
+/* Emergency Card */
+.emergency-card {
+  border-top: 4px solid #dc3545;
+}
+
+.emergency-card h3 {
+  color: #dc3545;
+}
+
+.emergency-card button {
+  background: #dc3545;
+}
+
+.emergency-card button:hover {
+  background: #b52a37;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-header {
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .dashboard-welcome,
+  .dashboard-services {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* =========================
+   MEDICINES PAGE
+========================= */
+
+.medicines-page {
+  min-height: 100vh;
+  background: #f4f9f9;
+  padding-bottom: 60px;
+}
+
+.medicines-header {
+  background: #087f8c;
+  color: white;
+  padding: 40px 50px;
+}
+
+.medicines-header h1 {
+  margin: 0 0 10px;
+  font-size: 32px;
+}
+
+.medicines-header p {
+  margin: 0;
+  font-size: 17px;
+  opacity: 0.9;
+}
+
+.medicine-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 30px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.medicine-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s;
+}
+
+.medicine-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.medicine-icon {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.medicine-card h2 {
+  color: #087f8c;
+  margin-bottom: 20px;
+}
+
+.medicine-card p {
+  color: #555;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.medicine-status {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 14px;
+
+  background: #e6f7f5;
+  color: #087f8c;
+
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .medicine-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .medicines-header {
+    padding: 30px 20px;
+  }
+
+  .medicines-header h1 {
+    font-size: 26px;
+  }
+
+  .medicine-container {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+}
+/* =========================
+   HEALTH RECORDS PAGE
+========================= */
+
+.health-records-page {
+  min-height: 100vh;
+  background: #f4f9f9;
+  padding-bottom: 60px;
+}
+
+.health-records-header {
+  background: #087f8c;
+  color: white;
+  padding: 40px 50px;
+}
+
+.health-records-header h1 {
+  margin: 0 0 10px;
+  font-size: 32px;
+}
+
+.health-records-header p {
+  margin: 0;
+  font-size: 17px;
+  opacity: 0.9;
+}
+
+.records-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 30px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.record-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s;
+}
+
+.record-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.record-icon {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.record-card h2 {
+  color: #087f8c;
+  margin-bottom: 20px;
+}
+
+.record-card p {
+  color: #555;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.record-card button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 11px;
+
+  background: #087f8c;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.record-card button:hover {
+  background: #066872;
+}
+
+@media (max-width: 900px) {
+  .records-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .health-records-header {
+    padding: 30px 20px;
+  }
+
+  .health-records-header h1 {
+    font-size: 26px;
+  }
+
+  .records-container {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+}
+/* =========================
+   HEALTH RECORDS PAGE
+========================= */
+
+.health-records-page {
+  min-height: 100vh;
+  background: #f4f9f9;
+  padding-bottom: 60px;
+}
+
+.health-records-header {
+  background: #087f8c;
+  color: white;
+  padding: 40px 50px;
+}
+
+.health-records-header h1 {
+  margin: 0 0 10px;
+  font-size: 32px;
+}
+
+.health-records-header p {
+  margin: 0;
+  font-size: 17px;
+  opacity: 0.9;
+}
+
+.records-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 30px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.record-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s;
+}
+
+.record-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.record-icon {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.record-card h2 {
+  color: #087f8c;
+  margin-bottom: 20px;
+}
+
+.record-card p {
+  color: #555;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.record-card button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 11px;
+
+  background: #087f8c;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.record-card button:hover {
+  background: #066872;
+}
+
+@media (max-width: 900px) {
+  .records-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .health-records-header {
+    padding: 30px 20px;
+  }
+
+  .health-records-header h1 {
+    font-size: 26px;
+  }
+
+  .records-container {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+}
+/* =========================
+   EMERGENCY PAGE
+========================= */
+
+.emergency-page {
+  min-height: 100vh;
+  background: #f4f9f9;
+  padding-bottom: 60px;
+}
+
+.emergency-header {
+  background: #dc3545;
+  color: white;
+  padding: 40px 50px;
+}
+
+.emergency-header h1 {
+  margin: 0 0 10px;
+  font-size: 32px;
+}
+
+.emergency-header p {
+  margin: 0;
+  font-size: 17px;
+  opacity: 0.95;
+}
+
+.emergency-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 30px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.emergency-page .emergency-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+
+  border-top: 4px solid #dc3545;
+  transition: 0.3s;
+}
+
+.emergency-page .emergency-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.emergency-icon {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.emergency-page .emergency-card h2 {
+  color: #dc3545;
+  margin-bottom: 15px;
+}
+
+.emergency-page .emergency-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.emergency-page .emergency-card button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+
+  background: #dc3545;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.emergency-page .emergency-card button:hover {
+  background: #b52a37;
+}
+
+.emergency-warning {
+  max-width: 1140px;
+  margin: 10px auto;
+  padding: 20px 30px;
+
+  background: #fff3cd;
+  border-left: 5px solid #ffc107;
+  border-radius: 8px;
+}
+
+.emergency-warning h3 {
+  margin-top: 0;
+  color: #856404;
+}
+
+.emergency-warning p {
+  color: #66520a;
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .emergency-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .emergency-header {
+    padding: 30px 20px;
+  }
+
+  .emergency-header h1 {
+    font-size: 26px;
+  }
+
+  .emergency-container {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  .emergency-warning {
+    margin: 10px 20px;
+  }
+}
+/* =========================
+   APPOINTMENTS PAGE
+========================= */
+
+.appointments-page {
+  min-height: 100vh;
+  background: #f4f9f9;
+  padding-bottom: 60px;
+}
+
+.appointments-header {
+  background: #087f8c;
+  color: white;
+  padding: 40px 50px;
+}
+
+.appointments-header h1 {
+  margin: 0 0 10px;
+  font-size: 32px;
+}
+
+.appointments-header p {
+  margin: 0;
+  font-size: 17px;
+  opacity: 0.9;
+}
+
+.appointment-card {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 35px;
+
+  background: white;
+  border-radius: 15px;
+
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.appointment-card h2 {
+  color: #087f8c;
+  margin-bottom: 25px;
+}
+
+.appointment-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.appointment-card label {
+  margin-top: 15px;
+  margin-bottom: 7px;
+  font-weight: bold;
+  color: #374151;
+}
+
+.appointment-card input,
+.appointment-card select,
+.appointment-card textarea {
+  width: 100%;
+  padding: 12px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.appointment-card textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.appointment-card input:focus,
+.appointment-card select:focus,
+.appointment-card textarea:focus {
+  outline: none;
+  border-color: #087f8c;
+}
+
+.appointment-card form button {
+  margin-top: 25px;
+  padding: 13px;
+
+  background: #087f8c;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.appointment-card form button:hover {
+  background: #066872;
+}
+
+.appointment-success {
+  margin-top: 30px;
+  padding: 20px;
+
+  background: #e6f7f5;
+  border-left: 5px solid #087f8c;
+  border-radius: 8px;
+}
+
+.appointment-success h3 {
+  color: #087f8c;
+  margin-top: 0;
+}
+
+.appointment-success p {
+  color: #555;
+  margin: 8px 0;
+}
+
+@media (max-width: 600px) {
+  .appointments-header {
+    padding: 30px 20px;
+  }
+
+  .appointments-header h1 {
+    font-size: 26px;
+  }
+
+  .appointment-card {
+    margin: 25px 20px;
+    padding: 25px;
+  }
+}
+/* =========================
+   TELECONSULTATION PAGE
+========================= */
+
+.teleconsultation-page {
+  min-height: 100vh;
+  background: #f4f9f9;
+  padding-bottom: 60px;
+}
+
+.teleconsultation-header {
+  background: #087f8c;
+  color: white;
+  padding: 40px 50px;
+}
+
+.teleconsultation-header h1 {
+  margin: 0 0 10px;
+  font-size: 32px;
+}
+
+.teleconsultation-header p {
+  margin: 0;
+  font-size: 17px;
+  opacity: 0.9;
+}
+
+.doctor-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 30px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.doctor-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.doctor-icon {
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+
+.doctor-card h2 {
+  color: #087f8c;
+  margin-bottom: 10px;
+}
+
+.doctor-card p {
+  color: #555;
+  margin: 8px 0;
+}
+
+.doctor-available {
+  color: #198754 !important;
+  font-weight: bold;
+}
+
+.doctor-later {
+  color: #d89b00 !important;
+  font-weight: bold;
+}
+
+.doctor-card button {
+  width: 100%;
+  margin-top: 18px;
+  padding: 12px;
+
+  background: #087f8c;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.doctor-card button:hover {
+  background: #066872;
+}
+
+@media (max-width: 900px) {
+  .doctor-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .teleconsultation-header {
+    padding: 30px 20px;
+  }
+
+  .teleconsultation-header h1 {
+    font-size: 26px;
+  }
+
+  .doctor-container {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+}
+/* =========================
+   FACILITIES PAGE
+========================= */
+
+.facilities-page {
+  min-height: 100vh;
+  background: #f4f9f9;
+  padding-bottom: 60px;
+}
+
+.facilities-header {
+  background: #087f8c;
+  color: white;
+  padding: 40px 50px;
+}
+
+.facilities-header h1 {
+  margin: 0 0 10px;
+  font-size: 32px;
+}
+
+.facilities-header p {
+  margin: 0;
+  font-size: 17px;
+  opacity: 0.9;
+}
+
+.facility-search {
+  max-width: 900px;
+  margin: 35px auto;
+  padding: 0 30px;
+  display: flex;
+  gap: 12px;
+}
+
+.facility-search input {
+  flex: 1;
+  padding: 13px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.facility-search input:focus {
+  outline: none;
+  border-color: #087f8c;
+}
+
+.facility-search button {
+  padding: 13px 22px;
+  background: #087f8c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.facility-search button:hover {
+  background: #066872;
+}
+
+.facility-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 30px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.facility-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.facility-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.facility-card h2 {
+  color: #087f8c;
+  margin-bottom: 18px;
+}
+
+.facility-card p {
+  color: #555;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.facility-card button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 11px;
+
+  background: #087f8c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.facility-card button:hover {
+  background: #066872;
+}
+
+@media (max-width: 900px) {
+  .facility-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .facilities-header {
+    padding: 30px 20px;
+  }
+
+  .facilities-header h1 {
+    font-size: 26px;
+  }
+
+  .facility-search {
+    padding: 0 20px;
+    flex-direction: column;
+  }
+
+  .facility-container {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+}
+.service-card {
+    cursor: pointer;
+transition: 0.3s;
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+}
