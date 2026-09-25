@@ -27,9 +27,12 @@ function Home() {
   Find Healthcare Facility
 </button>
 
-            <button className="emergency-btn">
-              🚑 Emergency Help
-            </button>
+        <button
+  className="emergency-btn"
+  onClick={() => navigate("/emergency")}
+>
+  🚑 Emergency Help
+</button>
           </div>
         </div>
 
@@ -99,3 +102,31 @@ function Home() {
 }
 
 export default Home;
+{/* Healthcare Statistics */}
+<section className="health-stats">
+
+  <div className="stat-card">
+    <div className="stat-icon">🏥</div>
+    <h2>100+</h2>
+    <p>Healthcare Facilities</p>
+  </div>
+
+  <div className="stat-card">
+    <div className="stat-icon">👨‍⚕️</div>
+    <h2>500+</h2>
+    <p>Healthcare Professionals</p>
+  </div>
+
+  <div className="stat-card">
+    <div className="stat-icon">👥</div>
+    <h2>10,000+</h2>
+    <p>Patients Supported</p>
+  </div>
+
+  <div className="stat-card">
+    <div className="stat-icon">🚑</div>
+    <h2>24/7</h2>
+    <p>Emergency Assistance</p>
+  </div>
+
+</section>
